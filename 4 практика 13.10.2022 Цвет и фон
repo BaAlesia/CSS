@@ -1,0 +1,70 @@
+Задание
+Используй CSS и стилизуй эту страницу. Пиши код в окне с CSS, HTML и уже написанный CSS трогать запрещено.
+
+.html-color - задай фон через HTML-имя цвета;
+.hex-color - задай фон через HEX-цвет (гугли color picker);
+.rgb - через RGB;
+.rgb - скопируй rgb, добавь букву a, добавь прозрачность 50%;
+.hsl - через HSL;
+.hsla - скопируй hsl, добавь букву a, добавь прозрачность 50%;
+.image - задай фон картинкой, можешь взять вот эту.
+
+Решение:
+.html-color {
+  background: blue;
+}
+
+.hex-color {
+  background: #2d51ff;
+}
+
+.rgb-color {
+  background: rgb(125, 180, 18);
+}
+
+.rgba-color {
+  background: rgba(125, 180, 18, 0.5);
+}
+
+.hsl-color {
+  background: hsl(330, 80%, 50%);
+}
+
+.hsla-color {
+  background: hsla(330, 80%, 50%, 0.5);
+}
+
+.image {
+  background-image: url(https://images.indianexpress.com/2018/08/buddha-dreamstime_l_62565557.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+*** код, который заменяет три верхние строчки
+.image {
+  background: url(https://images.indianexpress.com/2018/08/buddha-dreamstime_l_62565557.jpg) center/cover;
+}
+***
+
+
+
+
+*** 
+body {
+  background: #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin: 16px;
+  background: #fff;
+  font-size: 32px;
+}
+***
